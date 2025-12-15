@@ -9,9 +9,9 @@ from facenet_pytorch import MTCNN
 import pandas as pd
 
 
-st.set_page_config(page_title="Facial Expression Recognition", layout="centered")
-st.title("Facial Expression Recognition")
-st.caption("ResNeXt-50 trained on FERPlus dataset")
+st.set_page_config(page_title="FDeteksi Ekspresi wajah", layout="centered")
+st.title("Deteksi Ekspresi Wajah")
+st.caption("CNN arsitektur ResNeXt")
 
 device = torch.device("cpu")
 
