@@ -9,7 +9,7 @@ from facenet_pytorch import MTCNN
 import pandas as pd
 
 
-st.set_page_config(page_title="FDeteksi Ekspresi wajah", layout="centered")
+st.set_page_config(page_title="FER", layout="centered")
 st.title("Deteksi Ekspresi Wajah")
 st.caption("CNN arsitektur ResNeXt")
 
@@ -48,8 +48,8 @@ transform = transforms.Compose([
 mtcnn = MTCNN(keep_all=False, device=device)
 
 
-st.subheader("Input")
-input_type = st.radio("Pilih input:", ["Upload Gambar", "Ambil Foto (Webcam)"])
+st.subheader("Jenis Input Ekspresi Wajah")
+input_type = st.radio("Pilih cara input:", ["Upload Gambar", "Ambil Foto (Webcam)"])
 
 image = None
 if input_type == "Upload Gambar":
